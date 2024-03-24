@@ -1,0 +1,11 @@
+services:
+  postgresql_keycloak:
+    image: postgres:13
+    expose:
+      - '5432'
+    ports:
+      - '5433:5432'
+    environment:
+      POSTGRES_USER: 'postgres'
+      POSTGRES_PASSWORD: 'postgres'
+      POSTGRES_DB: 'postgres'
